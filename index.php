@@ -6,6 +6,7 @@ if (isset($_SESSION["error"])) {
     unset($_SESSION["error"]);
 } else if (isset($_SESSION["success"])) {
     echo '<script>alert("Record inserted into database successfully");</script>';
+    unset($_SESSION["success"]);
     // echo "No errors";
 }
 include("pages/header.php");
